@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    height: 500px;
+    width: 798px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(13deg,aqua,navy);
+}
+.card img{
+    position: absolute;
+    bottom: 40px;
+    right: 0%;
+    transform: translateX(-48%);
+    height: 420px;
+    transition: 0.5s;
+    border-radius: 10px 0px 0px 10px;
+}
+.card:hover img{
+    right: 22%;
+    height: 500px;
+    bottom: 0px;
+    
+}
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 45%;
+    padding: 20px 0px 22px 55px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+.card .content h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #f86c05;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.card .content h5{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #00ff9d;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+.card .content p{
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #00ff9d;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    padding-top: 15px;
+    line-height: 20px;
+    text-align: start;
+    padding-bottom: 40px;
+}
+.card .content a{
+    text-decoration: none;
+    padding: 15px 35px;
+    background-color: darkgreen;
+    border-radius: 5px;
+    color: azure;
+    text-transform: capitalize;
+    transition: .4s;
+     letter-spacing: 1px;
+}
+.card .content a:hover{
+    background-color: darkmagenta;
+    color: #ffffff;
+    transition: .4s;
+    letter-spacing: 1px;
+}
